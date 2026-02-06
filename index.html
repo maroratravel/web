@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MARORA | Despertem emocions que es converteixen en records</title>
+    <meta name="description" content="Club de viatges i estil de vida. Viatja millor, de manera intel·ligent i compartida.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              marora: {
+                deep: '#0A2342',   // Blau Oceà Profund
+                celestial: '#4A90E2', // Blau Celestial
+                soft: '#A4D7E1',   // Aiguamarina Suau
+                gold: '#D4AF37',   // Sorra Daurada
+                warm: '#E8D5B5',   // Beix càlid
+                white: '#FFFFFF',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              serif: ['Playfair Display', 'Georgia', 'serif'],
+            },
+            animation: {
+              'fade-in': 'fadeIn 1s ease-out',
+              'slide-up': 'slideUp 1s ease-out',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideUp: {
+                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+      
+      body {
+        font-family: 'Inter', sans-serif;
+        color: #0A2342;
+        background-color: #FFFFFF;
+        overflow-x: hidden;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Playfair Display', serif;
+      }
+      .scroll-smooth {
+        scroll-behavior: smooth;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
